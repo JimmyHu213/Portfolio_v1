@@ -31,7 +31,7 @@
           <p>Web & Software Developer</p>
           <h1>
             Hi, I am <span>Jimmy</span> Hu<br />
-            From Australia
+            An <span>enthusiastic</span> developer
           </h1>
         </div>
       </div>
@@ -45,17 +45,19 @@
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+            <p id="about-me">
+              I am an enthusiastic and open-minded person who loves to take on
+              new challenges. After two years of study and six months of working
+              experience in the IT industry, I can efficiently construct and
+              operate websites and software with combined technical skills.
+              During my internship and casual job, I have shown a strong ability
+              to prioritise tasks to achieve goals and I have proven capable of
+              positive collaboration, problem-solving and working towards common
+              team goals. <br> <br>I seek to start my career in challenging projects that
+              will exercise my technical skills, experience and communications
+              skills for the benefit of the organization and team. And I am
+              getting ready to become a professional full-stack developer in the
+              IT industry.
             </p>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')">
@@ -70,22 +72,26 @@
               <ul>
                 <li>
                   <span>Web Development</span><br />
-
                   <span class="tags">HTML</span>
                   <span class="tags">CSS</span>
                   <span class="tags">JavaScript</span>
                   <span class="tags">React.js</span>
                   <span class="tags">PHP</span>
-                  <span class="tags">Node.js</span>
-                  <span class="tags">MySQL</span>
+                  <span class="tags">HTTP/HTTPS</span>
+                  <span class="tags">REST</span>
                 </li>
                 <li>
                   <span>Software Development</span><br />
-
                   <span class="tags">Swift</span>
                   <span class="tags">.NET Framework</span>
                   <span class="tags">Flutter</span>
                   <span class="tags">Linux</span>
+                </li>
+                <li>
+                  <span>Database Management</span><br />
+                  <span class="tags">SQL</span>
+                  <span class="tags">PL/SQL</span>
+                  <span class="tags">PhpMyAdmin</span>
                 </li>
                 <li>
                   <span>Software Proficiencies</span><br />
@@ -99,6 +105,7 @@
             </div>
             <div class="tab-contents" id="experience">
               <ul>
+                
                 <li>
                   <span>My IT Studio Jul 2022 - Nov 2022</span><br />
 
@@ -120,6 +127,7 @@
                   <span>The University of Tasmania, Feb 2021 - Dec 2022</span
                   ><br />
                   <div>Master of Information Communication Technology</div>
+                  <div>Tasmanian International Scholarship 2021</div>
                 </li>
               </ul>
             </div>
@@ -133,17 +141,7 @@
       <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
-          <div>
-            <i class="fa-solid fa-crop-simple"></i>
-            <h2>UX/UI Design</h2>
-            <p>
-              larised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing softwa
-            </p>
-            <a href="#">Learn More</a>
-          </div>
-
+        
           <div>
             <i class="fa-solid fa-code"></i>
             <h2>Web Design</h2>
@@ -158,6 +156,16 @@
           <div>
             <i class="fa-solid fa-mobile-screen-button"></i>
             <h2>Application Design</h2>
+            <p>
+              larised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing softwa
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Database Management</h2>
             <p>
               larised in the 1960s with the release of Letraset sheets
               containing Lorem Ipsum passages, and more recently with desktop
@@ -226,8 +234,8 @@
         <div class="row">
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fa-solid fa-envelope"></i> Jiemingh213@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i> 0493-260-301</p>
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto: Jiemingh213@gmail.com">jiemingh213@gmail.com</a></p>
+            <p><i class="fa-solid fa-phone"></i> <a href="tel:0493-260-301">0493-260-301</a> </p>
             <div class="social-icons">
               <a href="https://www.facebook.com/profile.php?id=100077348628273"
                 ><i class="fa-brands fa-facebook"></i
@@ -235,14 +243,14 @@
               <a href="https://instagram.com"
                 ><i class="fa-brands fa-square-instagram"></i
               ></a>
-              <a href="https://github.com"
+              <a href="https://github.com/JimmyHu213"
                 ><i class="fa-brands fa-github"></i
               ></a>
               <a href="https://linkedin.com"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
             </div>
-            <a href="./images/my-cv.pdf" download class="btn btn2"
+            <a href="./images/CV_Jimmy_Hu(4).pdf" download class="btn btn2"
               >Download CV</a
             >
           </div>
@@ -254,6 +262,7 @@
                 name="Email"
                 placeholder="Your Email"
                 required
+                
               />
               <textarea
                 name="Message"
@@ -272,7 +281,7 @@
         </p>
       </div>
     </div>
-
+    
     <!-- -----------------script---------------- -->
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
@@ -302,22 +311,23 @@
       }
     </script>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyT7Sp8I_B3Ow3yTy6JrmgkYEFE2LpEjigMcWsYJCRvNgtRgFbEC66LxlNLiPse0_qT/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const msg = document.getElementById("msg")
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            msg.innerHTML = "Message sent successfully"
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyT7Sp8I_B3Ow3yTy6JrmgkYEFE2LpEjigMcWsYJCRvNgtRgFbEC66LxlNLiPse0_qT/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
             setTimeout(() => {
-              msg.innerHTML = ""
+              msg.innerHTML = "";
             }, 5000);
-            form.reset()
+            form.reset();
           })
-          .catch(error => console.error('Error!', error.message))
-      })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
   </body>
 </html>

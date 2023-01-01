@@ -96,6 +96,12 @@ nav ul li a:hover::after {
   color: #ababab;
 }
 
+#about-me{
+  display:inline-block;
+  width:100%;
+  text-align: justify;
+}
+
 .row {
   display: flex;
   justify-content: space-between;
@@ -328,10 +334,16 @@ nav ul li a:hover::after {
   margin-top: 30px;
 }
 
+
 .contact-left p i {
   color: #ff004f;
   margin-right: 15px;
   font-size: 25px;
+}
+
+.contact-left p a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .social-icons {
