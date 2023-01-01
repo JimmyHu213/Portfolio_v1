@@ -10,6 +10,19 @@
       src="https://kit.fontawesome.com/5a711ce050.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Reads out the scroll position and stores it in the data attribute
+      // so we can use it in our stylesheets
+      const storeScroll = () => {
+        document.documentElement.dataset.scroll = window.scrollY;
+      };
+
+      // Listen for new scroll events
+      document.addEventListener("scroll", storeScroll);
+
+      // Update scroll position for first time
+      storeScroll();
+    </script>
   </head>
 
   <body>
@@ -27,8 +40,9 @@
           </ul>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
+
         <div class="header-text">
-          <p>Web & Software Developer</p>
+          <p>Web & Software Development</p>
           <h1>
             Hi, I am <span>Jimmy</span> Hu<br />
             An <span>enthusiastic</span> developer
@@ -143,34 +157,39 @@
         <div class="services-list">
           <div>
             <i class="fa-solid fa-code"></i>
-            <h2>Web Design</h2>
+            <h2>
+              Web <br />
+              Development
+            </h2>
             <p>
-              larised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing softwa
+              Supported by a solid and strong academic background in web
+              development. Developed websites using HTML, CSS and
+              JavaScript, PHP and React.js.
             </p>
-            <a href="#">Learn More</a>
           </div>
 
           <div>
             <i class="fa-solid fa-mobile-screen-button"></i>
-            <h2>Application Design</h2>
+            <h2>
+              Application <br />
+              Development
+            </h2>
             <p>
-              larised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing softwa
+              Working as a developer in UTAS technical program. Collaborated
+              with other team members to fulfill requirement from clients in
+              real business projects.
             </p>
-            <a href="#">Learn More</a>
           </div>
           <div>
             <i class="fa-solid fa-database"></i>
-            <h2>Database Management</h2>
+            <h2>
+              Database <br />
+              Management
+            </h2>
             <p>
-              larised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing softwa
+              Supported by a solid and strong academic background in Database
+              Management. Built database using SQL and PL/SQL on oracle platform according to business rules.
             </p>
-            <a href="#">Learn More</a>
           </div>
         </div>
       </div>
@@ -211,15 +230,15 @@
             </div>
           </div>
           <div class="work">
-            <img src="./images/work-3.png" />
+            <img src="./images/todo.png" />
             <div class="layer">
-              <h3>Music App</h3>
+              <h3>Todo List Website</h3>
               <p>
-                larised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing softwa
+                A simple coffe-time website built by React.js. Generate a todo
+                list for user to arrange their tasks with responsive functions
+                and user-friendly interface
               </p>
-              <a href="#"
+              <a href="https://github.com/JimmyHu213/React_ToDoList"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
@@ -279,6 +298,9 @@
             <span id="msg"></span>
           </div>
         </div>
+      </div>
+      <div>
+        <a id="gotop" href="#"><i class="fa-solid fa-arrow-up"></i></a>
       </div>
       <div class="copyright">
         <p>
